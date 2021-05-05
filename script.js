@@ -2,7 +2,6 @@ const keyPressText = document.querySelector('.key-pressed');
 
 document.addEventListener('keydown', function (e) {
 	e.preventDefault();
-	console.log(e);
 	if (e.key == ' ') {
 		keyPressText.textContent = 'space'.charAt(0).toUpperCase() + 'space'.slice(1);
 	} else if (e.key == 'Meta') {
